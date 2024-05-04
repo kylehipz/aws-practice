@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "copy-ecr-image"
+version = "0.1.0"
+description = ""
+authors = ["Kyle Hipolito <kylehipolito2109@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aws-cdk-lib = "^2.140.0"
+constructs = "^10.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

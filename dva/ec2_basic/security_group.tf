@@ -9,7 +9,7 @@ resource "aws_security_group" "ssh_access" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      self = false
+      self = true
       security_groups = []
       prefix_list_ids = []
       description = "Port 22"
@@ -32,7 +32,7 @@ resource "aws_security_group" "http_access" {
       from_port = 80
       to_port = 80
       protocol = "tcp"
-      self = false
+      self = true
       security_groups = []
       prefix_list_ids = []
       description = "Port 80"
@@ -46,7 +46,7 @@ resource "aws_security_group" "http_access" {
       from_port = 0
       to_port = 0
       protocol = "-1"
-      self = false
+      self = true
       security_groups = []
       prefix_list_ids = []
       description = "All traffic"

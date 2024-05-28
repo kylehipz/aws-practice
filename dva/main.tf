@@ -17,6 +17,6 @@ provider "aws" {
   }
 }
 
-module "section_5_6" {
-  source = "./section_5_6"
+module "ec2_basic" {
+  source = "./ec2_basic"
 }
